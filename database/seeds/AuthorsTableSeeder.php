@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Comic;
+use App\Author;
 use Faker\Generator as Faker;
 
 class AuthorsTableSeeder extends Seeder
@@ -11,7 +11,7 @@ class AuthorsTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(Faker $faker)
     {
         for ($i = 0; $i < 10; $i++) {
 
